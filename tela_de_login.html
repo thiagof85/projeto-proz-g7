@@ -2,36 +2,53 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/tela_de_login.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap" rel="stylesheet">
     <title>Faça seu login</title>
 </head>
+
 <body>
-    <section> 
-        <p> Acesso <strong>vitalício</strong> e <strong>certificados</strong> por módulos. </p>
-        <p>Sua jornada Dev começa agora</p>
-    </section>
-    <aside>
-        <h1><p>DevLearn</p></h1>
-        <div>
-            <div> <a href=""><p>Crie sua conta</p></a> </div>
-            <div> <a href=""><p>Acessar sua conta</p></a> </div>
+    <main>
+        <section>
+            <p> Acesso <strong>vitalício</strong> e <strong>certificados</strong> por módulos. </h3>
+            <p>Sua jornada Dev começa agora</p>
+        </section>
+        
+        <div class="login_principal">
+            <h1>DevLearn</h1>
+            <div class="conta_tipo" >
+                <ul> <a href=""><p class="recurso_login">Crie sua conta</p></a> </ul>
+                <ul> <a href=""><p class="recurso_login">Acessar sua conta</p></a> </ul>
+            </div>
+            
+            
+            <form>
+                <ul>
+                    <li><label for="usuario">Usuário:</label></li>
+                    <li><input type="text" id="usuario" name="usuario"></li>
+                </ul>
+                <ul>
+                    <li><label for="senha">Senha:</label></li>
+                    <li><input type="password" id="senha" name="senha"></li>
+                </ul>
+            </form>
+            
+            <div class="conta_tipo2" >
+                <ul> <a href=""><p class="recurso_login">Lembrar-me de mim</p></a> </ul>
+                <ul> <a href=""><p class="recurso_login">Esqueci minha senha</p></a> </ul>
+            </div>
+
+            <div class="container">
+                <button class="botao" type="submit" >Entrar</button>
+            </div>
+
+            
         </div>
-        <form>
-            <div>
-                <label for="usuario">Usuário:</label>
-                <input type="text" id="usuario" name="usuario">
-            </div>
-            <div>
-                <label for="senha">Senha:</label>
-                <input type="password" id="senha" name="senha">
-            </div>
-            <div> <a href=""><p>Lembrar-me de mim</p></a> </div>
-            <div> <a href=""><p>Esqueci minha senha</p></a> </div>
-            <button type="submit">Entrar</button>
-        </form>
-    
-    </aside>
-    
-    
+     </main>
 
 
 </body>
