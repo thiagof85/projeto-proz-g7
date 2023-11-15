@@ -10,100 +10,133 @@
         <title></title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="">
+        <link rel="stylesheet" href="css/play_curso.css">
+        <script src="script.js" defer></script>
     </head>
     <body>
         <header id="page-header">
-                <img id="logo">
-                <form action="">
-                    <input type="text" id="search" value="" placeholder="search">
-                    <button></button>
-                </form>
-                <div>
-                    <button id="user-profile"></button>
-                    <button id="notifications"></button>
-                </div>
+            <h1 class="logo">DevLearn</h1>
+            <form action="">
+                <input type="text" class="search" value="" placeholder="search">
+            </form>
+            <div class="right-header-buttons">
+                <button class="user-profile"><img src="./img/user_icon.webp" alt=""></button>
+                <button class="notifications"><img src="./img/notification_icon.png" alt=""></button>
+            </div>
         </header>
         <nav>
             
             <div>
-                <a href="" id="home-link">inicio</a>
+                <a href="" class="home-link">inicio</a>
             </div>
             <div>
                 <p> > </p>
             </div>
             <div>
-                <a href="" id="select-content">backend</a>
+                <a href="" class="select-content">backend</a>
             </div>
             
   
         </nav>
         <main>
-            <section>
+            <section class="main">
                 <!-- video | procurar por embed dentro da tag meta-->
-                <div id="video-box">
-                    <iframe width="420" height="315" src="https://www.youtube.com/embed/S9uPNppGsGo?list=PLvE-ZAFRgX8hnECDn1v9HNTI71veL3oW0">
-                    </iframe>
-                </div>
-                
-                <div id="video-buttons-box">
-                    <button id="like" ><i class="fa fa-arrow-right" aria-hidden="true"></i>Gostei</button>
-                    <button id="dislike"><i class="fa fa-arrow-right" aria-hidden="true"></i>Não Gostei</button>
-                    <button id="check-view">Marcar como visto</button>
-                    <button id="back">Anterior</button>
-                    <button id="next">Próximo</button>
-                </div>
-                <div id="video-title-box">
-                    <h1>Titulo do video</h1>
-                </div>
 
+                <div class="video-box">
+
+                    <iframe  class="video" width="420" height="315" src="https://www.youtube.com/embed/S9uPNppGsGo?list=PLvE-ZAFRgX8hnECDn1v9HNTI71veL3oW0">
+                    </iframe>
+  
+                    
+                    <div id="video-buttons-box">
+                        <div class="left-buttons">
+                            <button class="like" >Gostei</button>
+                            <button class="dislike">Não Gostei</button>
+                            <button class="check-view">Marcar como visto</button>
+                        </div>
+                        <div class="right-buttons">
+                            <button class="back">Anterior</button>
+                            <button class="next">Próximo</button>
+                        </div>
+                    </div>
+                </div>
             </section>
-            <article>
-                <!-- descricao -->
-                <h4>Descrição:</h4>
-                <p id="description-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta saepe quod aliquid, consequuntur laudantium fugiat doloremque doloribus earum ut nisi consectetur? Pariatur, dolore veritatis? Nostrum doloremque laudantium nam soluta officiis.</p>
+
+            <div class="video-title-box">
+                <h1>Curso Python #01 - Seja um Programador</h1>
+            </div>
+
+            <article class="description">
+                <section>
+                     <!-- descricao -->
+                    <h4>Descrição:</h4>
+                    <p id="description-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta saepe quod aliquid, consequuntur laudantium fugiat doloremque doloribus earum ut nisi consectetur? Pariatur, dolore veritatis? Nostrum doloremque laudantium nam soluta officiis.</p>
+                </section>
+
             </article>
     
-            <section>
+            <section class="comment">
                 <!-- comentarios -->
                 <h4>Dúvidas e Comentarios</h4>
-                <img src="" alt="user">
+                <img src="img/user.jpeg" alt="user">
                 <input type="text" placeholder="Adicione um comentário ou dúvida!">
             
             </section>
     
             <aside>
                 <!-- modulos e videos -->
-                <h5>Módulos</h5>
+                <h5 class="modules-header">Módulos</h5>
                 <div id="playlist-box">
-                    <a href="" id="playlist-box-video">
-                        <div id="selected-arrow">
-                            >
+
+                    <div class="array-modules-videos">
+                        <!-- <div id="selected-arrow"> ></div> -->
+                        <div id="box-video-container-0">
+                            <div id="thumbnail"><img src="https://i.ytimg.com/vi/Mp0vhMDI7fA/hqdefault.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG&rs=AOn4CLA3p6DNVLtIPq4BhXhakkvJTBVMrg" alt="thumbnail"></div>
+                            <div id="video-title-box"> <h5 id="video-title">1. Titulo do video</h5></div>
                         </div>
-                        <div id="thumbnail">
-                            <img src="" alt="thumbnail">
+                        <div id="box-video-container-1">
+                            <div id="thumbnail"><img src="https://i.ytimg.com/vi/Mp0vhMDI7fA/hqdefault.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG&rs=AOn4CLA3p6DNVLtIPq4BhXhakkvJTBVMrg" alt="thumbnail"></div>
+                            <div id="video-title-box"> <h5 id="video-title">2. Titulo do video</h5></div>
                         </div>
-                        <div id="video-title-box">
-                            <h5 id="video-title">1. Titulo do video</h5>
+                        <div id="box-video-container-2">
+                            <div id="thumbnail"><img src="https://i.ytimg.com/vi/Mp0vhMDI7fA/hqdefault.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG&rs=AOn4CLA3p6DNVLtIPq4BhXhakkvJTBVMrg" alt="thumbnail"></div>
+                            <div id="video-title-box"> <h5 id="video-title">3. Titulo do video</h5></div>
                         </div>
-                    </a>
+                        <div id="box-video-container-3">
+                            <div id="thumbnail"><img src="https://i.ytimg.com/vi/Mp0vhMDI7fA/hqdefault.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG&rs=AOn4CLA3p6DNVLtIPq4BhXhakkvJTBVMrg" alt="thumbnail"></div>
+                            <div id="video-title-box"> <h5 id="video-title">4. Titulo do video</h5></div>
+                        </div>
+                    </div>
+
                 </div>
             </aside>
         </main>
         <footer>
             <div>
                 <h5>EMPRESA</h5>
-                <a href="">Sobre</a>
-                <a href="">Planos e Preços</a>
+                <ul>
+                    <li><a href="">Sobre</a></li>
+                    <li><a href="">Planos e Preços</a></li>
+                </ul>
             </div>
             <div>
                 <h5>CONTEÚDOS</h5>
-                <a href="">Trilhas disponiveis</a>
+                <ul>
+                    <li>
+                        <a href="">Trilhas disponiveis</a>
+                    </li>
+                </ul>
             </div>
             <div>
                 <h5>AJUDA & SUPORTE </h5>
-                <a href="">Fale Conosco</a>
-                <a href="">Perguntas Frequentes</a>
+                <ul>
+                    <li>
+                        <a href="">Fale Conosco</a>
+                    </li>
+                    <li>
+                        <a href="">Perguntas Frequentes</a>
+                    </li>
+                </ul>
             </div>
             <div>
                 <h5>MÍDIA SOCIAL</h5>
