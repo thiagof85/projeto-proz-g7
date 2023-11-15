@@ -1,0 +1,118 @@
+*{
+    margin:0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-image: url(tela_fundo_login.jpg);
+    fill: linear-gradient(270deg, #141414 0.01%, rgba(15, 12, 12, 0.32) 25.55%, rgba(13, 8, 8, 0.00) 50%);
+    padding: 0px;
+    background-size: 50%;
+    flex-shrink: 1;
+    background-repeat: no-repeat;
+    background-color:#141414;
+    
+    
+
+
+}
+
+main {
+    padding: 30px;
+}
+
+main section {
+    color: rgba(255, 255, 255, 0.69);
+    text-align: center;
+    font-family: Poppins;
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 275;
+    line-height: normal;
+    margin-top: 12px;
+}
+
+.login_principal{
+    color: rgba(255, 255, 255, 0.69);;
+    background-color: transparent;
+    width: 400px;
+    float: right;
+    margin-right:0px;
+    margin-top: 50px;
+    text-decoration: none;
+}
+
+div h1 {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 317px;
+    color:#B11B1B;
+    
+}
+
+a{
+    text-decoration: none;
+}
+
+.recurso_login{
+    color: #ffffff;
+    margin-bottom: 20%;
+    margin-top: 10%;
+    
+}
+
+#usuario{
+    margin-top:2%;
+    width: 355px;
+    padding: 5px;
+    border: none;
+    border-radius: 0;
+    background-color: transparent;
+    border-bottom: 1px solid #ffffff;    
+}
+
+#senha{
+    margin-top: 2%;
+    width: 355px;
+    padding: 5px;
+    border: none;
+    border-radius: 0;
+    background-color: transparent;
+    border-bottom: 1px solid #ffffff; 
+}
+
+.conta_tipo{
+    display: flex;
+    justify-content: space-around;
+    text-decoration:none;
+}
+
+form ul li{
+    list-style: none;
+}
+
+.conta_tipo2{
+    color: rgba(255, 255, 255, 0.69);
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+.container{
+    text-align: center;
+}
+
+.botao{
+    font-size: medium;
+    margin-top: 3%;
+    border:#141414;
+    color: blanchedalmond;
+    width: 180px;
+    height: 40px;
+    flex-shrink: 0;
+    border-radius: 50px;
+    text-align:center;
+    background-color: #B11B1B;
+
+}
